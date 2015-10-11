@@ -1,0 +1,17 @@
+http://getbootstrap.com/customize/
+
+Allows the following customization:
+
+"LESS files"
+
+Should Bootstrap include styling for the following elements? Not including the styling eliminates this, making bootstrap(.min).css smaller.
+
+
+"jQuery Plugins"
+
+Should Bootstrap include the JS required for the following plugins? Not including the code makes bootstrap(.min).js smaller.
+
+
+"LESS variables"
+
+Customize the variables that come with Bootstrap via this interface. Does the same thing as working with variables.less. Take note of what you change in case you need to download a new copy of Bootstrap later. In some cases, this can output a .json file so it does remember what was downloaded for you.

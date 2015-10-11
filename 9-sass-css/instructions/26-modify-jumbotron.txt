@@ -1,0 +1,29 @@
+CHANGING VARIABLES
+
+Let's say we want to change the jumbotron background color...
+
+Open bootstrap/_jumbotron.scss
+
+Find where the jumbotron background color is defined...  via $jumbotron-bg
+
+Go to bootstrap/_variables.scss to find what $jumbotron-bg is set 
+
+Copy the line of code, comment it out so we know what the original value was
+
+Can modify the variable to another color (red, #123456, $brand-info)
+$jumbotron-bg:					 rgba($brand-info, 0.4);
+
+Compile bootstrap.scss after changes and see the effect on the page.
+
+
+
+
+ADDING STYLING
+
+Add a border to the jumbotron
+
+After line 13 in bootstrap/_jumbotron.scss, add this:
+
+border: 1px solid darken($jumbotron-bg, 20%);
+
+Save bootstrap/_jumbotron.scss, compile bootstrap.scss

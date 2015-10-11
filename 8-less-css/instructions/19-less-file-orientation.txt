@@ -1,0 +1,24 @@
+Jen will go into the less folder and talk about the files contained there.
+
+She will talk about:
+
+bootstrap.less: the only file that gets compiled, links to all other partial files
+
+variables.less: where centralized variables are stored
+
+jumbotron.less: an example of a typical LESS file, in this case controlling the look of the jumbotron.
+
+To understand the LESS, we move back and forth between variables.less (to get the values) and jumbotron.less to figure out what the style will be. Check bootstrap.css to get the final value of the jumbotron style.
+
+Variables start with @ sign
+
+A variable can equal a value (#123456, 3em, 5px, "../fonts/", etc)
+
+Or another variable (@jumbotron-bg: @brand-success)
+
+Or a function.
+
+Example of function:
+
+@gray-darker:            lighten(#000, 13.5%); // #222
+

@@ -1,0 +1,56 @@
+Want the nav bar to go all the way across the top of the page?
+
+1. lines 13-43 -- cut and remove outside the container
+
+2. Wrap that row of navigation inside of a div with class of container-fluid
+
+3. Want the nav bar fixed? Add a class of navbar-fixed-top to the nav tag. This will cut off the top part of the page, so you will need to adjust the CSS as well to take this into account.
+http://getbootstrap.com/components/#navbar-fixed-top
+
+body {
+  padding-top: 70px;
+}
+
+Final code:
+
+<div class="container-fluid">
+  <div class="row">
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Fruit is Good</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="apples.html">Apples</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Citrus <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="oranges.html">Oranges</a></li>
+                        <li><a href="#">Limes</a></li>
+                        <li><a href="#">Lemons</a></li>
+                     </ul>
+                </li>
+                <li><a href="bananas.html">Bananas</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+</div>
+
+<!-- after this comes 
+<div class="container">
+    <div class="row">
+      <div class="jumbotron clearfix"> -->
+
+
+4. Now copy this final navigation code to each of the additional pages. Remember to remove class="active" to the correct link(s) within the nav bar.

@@ -1,0 +1,30 @@
+For the 4 buttons on the home page, let's make these all look the same!
+
+There are several ways of doing this, but let's work with mixins to see how we can create a new button style.
+
+1. Create a new color declaration in bootstrap/_variables.scss, around line 23
+
+//Jen's new color
+$brand-love:            #ca448c;
+
+
+
+2. Open bootstrap/_buttons.scss -- scroll to line 68, see the various types of buttons using the button mixin. The mixin comes from mixins/_buttons.scss, line 6.
+
+
+3. In bootstrap/_buttons.scss, scroll down to around line 90, insert code:
+
+// Love appears as pink, a custom Jen color
+.btn-love {
+  @include button-variant(#fff; $brand-love; darken($brand-love, 20%));
+}
+
+(Could establish variables for each one of these colors, but since we're using them once, I did not do that step.)
+
+
+4. In the HTML, change the classes in the links on lines 57, 63, 69, 75 to something like:
+
+<a href="apples.html" class="btn btn-love">
+
+
+5. Save all HTML and Sass files, compile bootstrap.scss, look at website!

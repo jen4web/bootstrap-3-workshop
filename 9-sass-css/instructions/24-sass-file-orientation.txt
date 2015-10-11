@@ -1,0 +1,24 @@
+Jen will go into the less folder and talk about the files contained there.
+
+She will talk about:
+
+_bootstrap.sass: the only file that gets compiled, links to all other partial files
+
+bootstrap/_variables.sass: where centralized variables are stored
+
+bootstrap/_jumbotron.sass: an example of a typical Sass file, in this case controlling the look of the jumbotron.
+
+To understand the Sass, we move back and forth between _variables.sass (to get the values) and _jumbotron.sass to figure out what the style will be. Check bootstrap.min.css to get the final value of the jumbotron style.
+
+Variables start with $ sign
+
+A variable can equal a value (#123456, 3em, 5px, "../fonts/", etc)
+
+Or another variable ($jumbotron-bg: $brand-success)
+
+Or a function.
+
+Example of function:
+
+$gray-darker:            lighten(#000, 13.5%); // #222
+

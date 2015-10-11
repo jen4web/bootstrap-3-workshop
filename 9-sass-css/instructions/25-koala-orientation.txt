@@ -1,0 +1,19 @@
+You should have downloaded the Sass/LESS compiler from http://koala-app.com/ and it should be running on your computer.
+
+In the css folder in your site, rename bootstrap.css to originalbootstrap.css
+
+Rename bootstrap.min.css to originalbootstrap.min.css
+
+View website -- all styling should be broken.
+
+If you were just working in LESS -- go to Koala, right-click on the folder name, and choose "delete". This will delete from the compiler but not from your file structure.
+
+Look in the sass folder -- change _bootstrap.scss to bootstrap.scss
+
+Drag your working folder into Koala. It will find your bootstrap.scss file automatically, as well as some JavaScript files (it will minify JavaScript as well as compile LESS/Sass).
+
+Note that bootstrap.sass saves to css/bootstrap.css after compiling. Change this to css/bootstrap.min.css. (You could leave it the other way, but you'd have to change the CSS file paths in your site to point to the correct file.)
+
+Single-click on the bootstrap.scss item to get choices for compiling. Auto compile should be on. As any Sass file is saved, Koala will automatically compile. Change Output Style to "expanded" to get human-readable CSS, or "compressed" to minify it. Then click the Compile button at the bottom of the column. You should get confirmation that compilation happened.
+
+View the website -- it should look the same as it did before.

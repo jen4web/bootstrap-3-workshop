@@ -1,0 +1,33 @@
+CHANGING VARIABLES
+
+Let's say we want to change the jumbotron background color...
+
+Open jumbotron.less
+
+Find where the jumbotron background color is defined...  via @jumbotron-bg
+
+Go to variables.less to find what @jumbotron-bg is set 
+
+Copy the line of code, comment it out so we know what the original value was
+
+Can modify the variable to another color (red, #123456, @brand-info)
+
+fade(@brand-info, 50%); -- converts the color @brand-info to 50% opaque. (Higher numbers = more opacity; lower numbers = more transparent)
+
+Compile bootstrap.less after changes and see the effect on the page.
+
+
+
+
+ADDING STYLING
+
+Add a border to the jumbotron
+
+After line 11 in jumbotron.less, add this:
+
+border: 1px solid darken(@jumbotron-bg, 20%);
+
+Save jumbotron.less. NOTE: may wind up with a buggy compile!
+Save variables.less after modifying jumbotron.less -- this should compile and work correctly.
+
+

@@ -1,0 +1,7 @@
+Jen will show the last few slides from the Powerpoint giving a background and orientation to LESS CSS.
+
+Why LESS? After looking at the Sass files, these are a direct port from the LESS setup. If you understand the LESS files and their configuration, the Sass files are set up the same way, in terms of structure, how the files link together, and even lines of code.
+
+Therefore, because LESS takes less time to set up for people unfamiliar with CSS preprocessing, that's what I'm going to use for this workshop. 
+
+If you wish to use Sass, the knowledge gained in this part of the workshop is directly transferrable to Sass. You can set up your own workflow with Sass (with or without Compass, Grunt, etc) and go from there.

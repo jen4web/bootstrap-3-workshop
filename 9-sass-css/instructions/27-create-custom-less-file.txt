@@ -1,0 +1,24 @@
+Take the old custom.css file from your css directory and move it to the sass/bootstrap directory.
+
+Rename to _custom.scss
+
+To the bottom of the bootstrap.scss file, add a link to the _custom.scss partial file:
+
+// custom styling
+@import "bootstrap/_custom.scss";
+
+Compile bootstrap.scss 
+
+From each html page, remove reference to custom.css file on line 9, i.e.
+    <link href="css/custom.css" rel="stylesheet">
+
+
+You may now refer to variables in the custom.less file if desired. For example:
+
+footer {
+	padding: 2em 0;
+	margin: 3em 0;
+	border-top: 1px solid #ddd;
+	color: $gray-light;
+	text-align: center;
+}

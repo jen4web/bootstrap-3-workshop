@@ -1,0 +1,26 @@
+Take the old custom.css file from your css directory and move it to the less directory.
+
+Rename to custom.less
+
+Make sure custom.less is not compiling in Koala.
+
+To the bottom of the bootstrap.less file, add a link to the custom.less partial file:
+
+// custom styling
+@import "custom.less";
+
+Compile bootstrap.less (Save file and it should auto-compile)
+
+From each html page, remove reference to custom.css file on line 9, i.e.
+    <link href="css/custom.css" rel="stylesheet">
+
+
+You may now refer to variables in the custom.less file if desired. For example:
+
+footer {
+	padding: 2em 0;
+	margin: 3em 0;
+	border-top: 1px solid #ddd;
+	color: @gray-light;
+	text-align: center;
+}
